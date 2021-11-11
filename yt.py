@@ -3,14 +3,14 @@ import os
 import PySimpleGUI as sg
 
 path = os.path.expanduser("~")
-
+sg.ChangeLookAndFeel('black')
 sg.theme('DarkBlue12')
 layout = [  [sg.Text('Youtube Downloader')],
             [sg.Text('Enter the video url'), sg.InputText()],
             [sg.Text('Video will be saved in Videos folder')],
             [sg.Button('Ok'), sg.Button('Exit')]
         ]
-window = sg.Window('yt_downloader', layout)
+window = sg.Window('yt_downloader', layout, icon='./yt.ico')
 while True:
     event, values = window.read()
     if event == sg.WIN_CLOSED or event == 'Exit':
