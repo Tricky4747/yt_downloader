@@ -1,6 +1,6 @@
 To use the program, first install the requirements. for that, go into the installation folder and run:
 
-python -m pip install requirements.txt
+python -m pip install -r requirements.txt
 
 Then, run:
 
