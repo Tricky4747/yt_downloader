@@ -4,7 +4,7 @@ import PySimpleGUI as sg
 
 path = os.path.expanduser("~")
 
-sg.theme('DarkAmber')   # Add a touch of color
+sg.theme('BlueMono')   # Add a touch of color
 # All the stuff inside your window.
 layout = [  [sg.Text('Youtube Downloader')],
             [sg.Text('Enter the video url'), sg.InputText()],
